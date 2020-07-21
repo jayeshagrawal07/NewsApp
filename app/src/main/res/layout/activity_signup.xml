@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SignupActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/linearLayout2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/textView4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="35dp"
+                android:text=" Create Account"
+                android:textSize="35sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <EditText
+                android:id="@+id/fullName"
+                android:layout_width="300dp"
+                android:layout_height="55dp"
+                android:layout_marginTop="30dp"
+                android:ems="10"
+                android:hint="Full Name"
+                android:inputType="textPersonName"
+                app:layout_constraintEnd_toEndOf="@+id/textView4"
+                app:layout_constraintStart_toStartOf="@+id/textView4"
+                app:layout_constraintTop_toBottomOf="@+id/textView4" />
+
+            <EditText
+                android:id="@+id/emailCreate"
+                android:layout_width="300dp"
+                android:layout_height="55dp"
+                android:layout_marginTop="25dp"
+                android:ems="10"
+                android:hint="Email"
+                android:inputType="textEmailAddress"
+                app:layout_constraintEnd_toEndOf="@+id/fullName"
+                app:layout_constraintStart_toStartOf="@+id/fullName"
+                app:layout_constraintTop_toBottomOf="@+id/fullName" />
+
+            <EditText
+                android:id="@+id/phoneNo"
+                android:layout_width="300dp"
+                android:layout_height="55dp"
+                android:layout_marginTop="25dp"
+                android:ems="10"
+                android:hint="Phone Number"
+                android:inputType="phone"
+                app:layout_constraintEnd_toEndOf="@+id/emailCreate"
+                app:layout_constraintStart_toStartOf="@+id/emailCreate"
+                app:layout_constraintTop_toBottomOf="@+id/emailCreate" />
+
+            <EditText
+                android:id="@+id/passwordCreate"
+                android:layout_width="300dp"
+                android:layout_height="55dp"
+                android:layout_marginTop="25dp"
+                android:ems="10"
+                android:hint="Password"
+                android:inputType="textPassword"
+                app:layout_constraintEnd_toEndOf="@+id/phoneNo"
+                app:layout_constraintStart_toStartOf="@+id/phoneNo"
+                app:layout_constraintTop_toBottomOf="@+id/phoneNo" />
+
+            <EditText
+                android:id="@+id/confPasswordCreate"
+                android:layout_width="300dp"
+                android:layout_height="55dp"
+                android:layout_marginTop="25dp"
+                android:ems="10"
+                android:hint="Confirm Password"
+                android:inputType="textPassword"
+                app:layout_constraintEnd_toEndOf="@+id/passwordCreate"
+                app:layout_constraintStart_toStartOf="@+id/passwordCreate"
+                app:layout_constraintTop_toBottomOf="@+id/passwordCreate" />
+
+            <Button
+                android:id="@+id/createBtn"
+                android:layout_width="300dp"
+                android:layout_height="48dp"
+                android:layout_marginTop="30dp"
+                android:text="CREATE"
+                app:layout_constraintEnd_toEndOf="@+id/confPasswordCreate"
+                app:layout_constraintStart_toStartOf="@+id/confPasswordCreate"
+                app:layout_constraintTop_toBottomOf="@+id/confPasswordCreate" />
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="64dp"
+                android:layout_marginLeft="64dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginBottom="16dp"
+                android:text="Already registered?"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="@+id/createBtn"
+                app:layout_constraintTop_toBottomOf="@+id/createBtn" />
+
+            <TextView
+                android:id="@+id/signinText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="64dp"
+                android:layout_marginRight="64dp"
+                android:layout_marginBottom="16dp"
+                android:clickable="true"
+                android:text="Sign In"
+                android:textColor="#6200ED"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="@+id/createBtn"
+                app:layout_constraintTop_toBottomOf="@+id/createBtn" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
